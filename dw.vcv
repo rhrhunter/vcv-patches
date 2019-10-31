@@ -1,0 +1,191 @@
+{
+  "version": "1.1.5",
+  "modules": [
+    {
+      "id": 40,
+      "plugin": "Core",
+      "version": "1.1.5",
+      "model": "AudioInterface",
+      "params": [],
+      "data": {
+        "audio": {
+          "driver": 5,
+          "deviceName": "Universal Audio, Inc.: Universal Audio Thunderbolt",
+          "offset": 16,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        33,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": -2.30849743
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 1.0
+        }
+      ],
+      "rightModuleId": 43,
+      "pos": [
+        11,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "plugin": "Core",
+      "version": "1.1.5",
+      "model": "MIDIToCVInterface",
+      "params": [],
+      "data": {
+        "channels": 1,
+        "polyMode": 0,
+        "clockDivision": 24,
+        "lastPitch": 8192,
+        "lastMod": 0,
+        "midi": {
+          "driver": 1,
+          "deviceName": "Minilogue (M)",
+          "channel": -1
+        }
+      },
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "plugin": "Bidoo",
+      "version": "1.0.13",
+      "model": "pErCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.185500026
+        },
+        {
+          "id": 1,
+          "value": 0.100000001
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 41,
+      "pos": [
+        21,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "plugin": "Core",
+      "version": "1.1.5",
+      "model": "CV-MIDI",
+      "params": [],
+      "data": {
+        "midi": {
+          "driver": 1,
+          "deviceName": "Sirin (M)",
+          "channel": 0
+        }
+      },
+      "pos": [
+        24,
+        1
+      ]
+    },
+    {
+      "id": 45,
+      "plugin": "robrich",
+      "version": "1.0.0",
+      "model": "darkworld",
+      "params": [
+        {
+          "id": 0,
+          "value": 9.14399719
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 126.682495
+        }
+      ],
+      "pos": [
+        48,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 185,
+      "outputModuleId": 42,
+      "outputId": 0,
+      "inputModuleId": 41,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 186,
+      "outputModuleId": 41,
+      "outputId": 1,
+      "inputModuleId": 43,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 187,
+      "outputModuleId": 43,
+      "outputId": 0,
+      "inputModuleId": 40,
+      "inputId": 4,
+      "color": "#0c8e15"
+    }
+  ]
+}
