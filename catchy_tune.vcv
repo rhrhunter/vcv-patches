@@ -1,10 +1,10 @@
 {
-  "version": "1.1.5",
+  "version": "1.1.6",
   "modules": [
     {
       "id": 38,
       "plugin": "ImpromptuModular",
-      "version": "1.1.1",
+      "version": "1.1.3",
       "model": "Foundry",
       "params": [
         {
@@ -324,7 +324,7 @@
         "holdTiedNotes": true,
         "showSharp": true,
         "seqCVmethod": 0,
-        "running": false,
+        "running": true,
         "resetOnRun": false,
         "attached": false,
         "velEditMode": 0,
@@ -1494,7 +1494,8 @@
           17445476,
           17445476
         ],
-        "id3_seqIndexEdit": 0
+        "id3_seqIndexEdit": 0,
+        "mergeTracks": 0
       },
       "pos": [
         8,
@@ -1504,7 +1505,7 @@
     {
       "id": 39,
       "plugin": "Fundamental",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "model": "VCO",
       "params": [
         {
@@ -1517,7 +1518,7 @@
         },
         {
           "id": 2,
-          "value": -34.4519997
+          "value": 21.9240074
         },
         {
           "id": 3,
@@ -1546,16 +1547,17 @@
     {
       "id": 40,
       "plugin": "Core",
-      "version": "1.1.5",
+      "version": "1.1.6",
       "model": "AudioInterface",
       "params": [],
       "leftModuleId": 55,
       "data": {
         "audio": {
           "driver": 5,
-          "offset": 41,
+          "deviceName": "Apple Inc.: Built-in Output",
+          "offset": 0,
           "maxChannels": 8,
-          "sampleRate": 16000,
+          "sampleRate": 44100,
           "blockSize": 256
         }
       },
@@ -1567,12 +1569,12 @@
     {
       "id": 41,
       "plugin": "Fundamental",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "model": "VCF",
       "params": [
         {
           "id": 0,
-          "value": 0.171999946
+          "value": 0.830499649
         },
         {
           "id": 1,
@@ -1633,7 +1635,7 @@
     {
       "id": 43,
       "plugin": "Fundamental",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "model": "VCO",
       "params": [
         {
@@ -1646,7 +1648,7 @@
         },
         {
           "id": 2,
-          "value": -32.183979
+          "value": 28.5660229
         },
         {
           "id": 3,
@@ -1675,7 +1677,7 @@
     {
       "id": 46,
       "plugin": "Fundamental",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "model": "VCA-1",
       "params": [
         {
@@ -1697,7 +1699,7 @@
     {
       "id": 47,
       "plugin": "Bogaudio",
-      "version": "1.1.22",
+      "version": "1.1.25",
       "model": "Bogaudio-ADSR",
       "params": [
         {
@@ -1723,6 +1725,9 @@
       ],
       "leftModuleId": 67,
       "rightModuleId": 46,
+      "data": {
+        "invert": 1.0
+      },
       "pos": [
         68,
         1
@@ -1765,7 +1770,7 @@
       "params": [
         {
           "id": 0,
-          "value": 1.0
+          "value": 0.59199959
         },
         {
           "id": 1,
@@ -1839,7 +1844,7 @@
     {
       "id": 56,
       "plugin": "Bogaudio",
-      "version": "1.1.22",
+      "version": "1.1.25",
       "model": "Bogaudio-AddrSeq",
       "params": [
         {
@@ -1890,6 +1895,7 @@
       "rightModuleId": 68,
       "data": {
         "select_on_clock": false,
+        "triggered_select": false,
         "range_offset": 0.0,
         "range_scale": 10.0
       },
@@ -1939,7 +1945,7 @@
     {
       "id": 62,
       "plugin": "Fundamental",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "model": "Noise",
       "params": [],
       "leftModuleId": 64,
@@ -1952,7 +1958,7 @@
     {
       "id": 63,
       "plugin": "Bogaudio",
-      "version": "1.1.22",
+      "version": "1.1.25",
       "model": "Bogaudio-ADSR",
       "params": [
         {
@@ -1978,6 +1984,9 @@
       ],
       "leftModuleId": 66,
       "rightModuleId": 60,
+      "data": {
+        "invert": 1.0
+      },
       "pos": [
         94,
         1
@@ -1986,7 +1995,7 @@
     {
       "id": 64,
       "plugin": "Fundamental",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "model": "VCA-1",
       "params": [
         {
@@ -2008,7 +2017,7 @@
     {
       "id": 66,
       "plugin": "Bogaudio",
-      "version": "1.1.22",
+      "version": "1.1.25",
       "model": "Bogaudio-AddrSeq",
       "params": [
         {
@@ -2060,6 +2069,7 @@
       "rightModuleId": 63,
       "data": {
         "select_on_clock": false,
+        "triggered_select": false,
         "range_offset": 0.0,
         "range_scale": 10.0
       },
@@ -2071,7 +2081,7 @@
     {
       "id": 67,
       "plugin": "CharredDesert",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "model": "M",
       "params": [
         {
@@ -2093,7 +2103,7 @@
     {
       "id": 68,
       "plugin": "ImpromptuModular",
-      "version": "1.1.1",
+      "version": "1.1.3",
       "model": "Semi-ModularSynth",
       "params": [
         {
@@ -2262,7 +2272,7 @@
         },
         {
           "id": 42,
-          "value": 0.0
+          "value": 25.1100025
         },
         {
           "id": 43,
@@ -2410,7 +2420,7 @@
         "holdTiedNotes": true,
         "seqCVmethod": 0,
         "pulsesPerStep": 1,
-        "running": false,
+        "running": true,
         "runModeSong3": 0,
         "stepIndexEdit": 15,
         "sequence": 0,
@@ -3009,7 +3019,7 @@
     {
       "id": 70,
       "plugin": "Bidoo",
-      "version": "1.0.11",
+      "version": "1.1.1",
       "model": "REI",
       "params": [
         {
